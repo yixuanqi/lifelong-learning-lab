@@ -10,7 +10,7 @@
 |---|---|---|
 | [Lab 01](labs/lab01/README.md) | A→B 后旧任务准确率如何变化？Replay 有用吗？ | 已运行，单种子已记录 |
 | [Lab 02](labs/lab02/README.md) | 训练时长与随机种子怎样影响遗忘估计？ | 已运行；有报告，原始 exp02 脚本与完整 CSV 待同步 |
-| [Lab 03](labs/lab03/PROTOCOL.md) | 连续学习许多任务后，学习新任务的能力是否退化？ | 进行中，结果尚未同步 |
+| [Lab 03](labs/lab03/REPORT.md) | 连续学习100个任务，新任务学习速度是否下降？ | 实验报告已同步；原始源码/CSV待导入 |
 | Lab 04（计划） | Continual Backprop 能否维护可塑性？ | 未开始 |
 
 ## 快速开始
@@ -43,3 +43,7 @@ python train.py --device auto
 PR 应带对照实验和复现说明；失败结果也要保留。
 
 详见 [Roadmap](research/ROADMAP.md) 和 [Contributing](CONTRIBUTING.md)。
+
+## 本地源码同步
+
+Windows 本地实验位于 `F:\\0AI\\lifelong_learning_lab_01`。当前对话不能直接访问该电脑磁盘。运行 [PowerShell 同步脚本](scripts/sync_local.ps1)，在独立 Git checkout 创建审查分支，把真实实验代码和选定结果提交给 GitHub。仓库为 **Public**，推送前检查文件内容；此流程不会删除或改动本地原始目录。
