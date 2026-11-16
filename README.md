@@ -46,4 +46,4 @@ PR 应带对照实验和复现说明；失败结果也要保留。
 
 ## 本地源码同步
 
-Windows 本地实验位于 `F:\\0AI\\lifelong_learning_lab_01`。当前对话不能直接访问该电脑磁盘。运行 [PowerShell 同步脚本](scripts/sync_local.ps1)，在独立 Git checkout 创建审查分支，把真实实验代码和选定结果提交给 GitHub。仓库为 **Public**，推送前检查文件内容；此流程不会删除或改动本地原始目录。
+Windows 本地实验位于 `F:\0AI\lifelong_learning_lab_01`。当前对话不能直接访问该电脑磁盘。运行 [PowerShell 同步脚本](scripts/sync_local.ps1)，在独立 Git checkout 创建审查分支，把真实实验代码和选定结果提交给 GitHub。仓库为 **Public**，推送前检查文件内容；此流程不会删除或改动本地原始目录。
