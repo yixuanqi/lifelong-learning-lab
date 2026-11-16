@@ -105,6 +105,13 @@ if ($LASTEXITCODE -ne 0) { throw 'git commit failed (check git identity)' }
 if ($NoPush) {
   Write-Host "Local branch ready: $branch (not pushed)"
 } else {
+  Write-Host 'REVIEW BEFORE PUSHING. GitHub repo is PUBLIC.'
+  & git -C $CheckoutDir status --short
+  $answer = Read-Host 'Type PUSH to publish this branch to PUBLIC GitHub'
+  if ($answer -cne 'PUSH') {
+    Write-Host "Not pushed. Your local sync branch is: $branch"
+    exit 0
+  }
   & git -C $CheckoutDir push -u origin $branch
   if ($LASTEXITCODE -ne 0) { throw 'git push failed (check GitHub authentication)' }
   Write-Host "Pushed branch: https://github.com/yixuanqi/lifelong-learning-lab/tree/$branch"
