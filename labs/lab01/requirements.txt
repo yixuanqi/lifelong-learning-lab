@@ -1,0 +1,4 @@
+# Install platform-appropriate CUDA torch / torchvision first.
+torch
+torchvision
+matplotlib

@@ -1,0 +1,15 @@
+seed,method,stage,epoch,A_accuracy,B_accuracy,loss
+42,naive,initial,0,10.8,6.7,
+42,naive,train_A,1,90.8,9.77,0.7247
+42,naive,train_A,2,93.07,9.7,0.2788
+42,naive,train_A,3,93.63,9.57,0.1996
+42,naive,train_B,1,89.0,91.2,0.607
+42,naive,train_B,2,91.07,93.17,0.2291
+42,naive,train_B,3,90.1,94.9,0.1675
+42,replay,initial,0,10.8,6.7,
+42,replay,train_A,1,90.8,9.77,0.7247
+42,replay,train_A,2,93.07,9.7,0.2788
+42,replay,train_A,3,93.63,9.57,0.1996
+42,replay,train_B,1,93.9,90.93,0.4938
+42,replay,train_B,2,93.67,93.2,0.1868
+42,replay,train_B,3,93.7,94.43,0.135

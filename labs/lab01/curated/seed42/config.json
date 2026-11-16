@@ -1,0 +1,23 @@
+{
+  "data_dir": "data",
+  "out": "results",
+  "train_limit": 12000,
+  "test_limit": 3000,
+  "epochs_a": 3,
+  "epochs_b": 3,
+  "batch_size": 128,
+  "lr": 0.001,
+  "buffer_size": 1000,
+  "replay_fraction": 0.25,
+  "seeds": [
+    42
+  ],
+  "methods": [
+    "naive",
+    "replay"
+  ],
+  "workers": 0,
+  "device": "auto",
+  "torch_version": "2.11.0+cu128",
+  "device_used": "cuda"
+}
